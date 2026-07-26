@@ -1,0 +1,7 @@
+name: "mindustry-ultimate-mod-pack"
+displayName: "Ultimate Combined Cheat Pack"
+author: "cd cat"
+description: "Combines 20x factory speed, 5x unit build speed, 10x T1 factory build speed, 2x core unit capacity, auto-complete pause menu button, and the unit stats editor UI."
+version: "1.1"
+minGameVersion: "159.7"
+  
