@@ -153,3 +153,12 @@ function showUnitEditorDialog() {
     dialog.show();
     }
       
+Events.on(ClientLoadEvent, () => {
+    Vars.content.blocks().each(block => {
+        // If the block is hidden or sandbox-only, make it visible in survival menus
+        if (block.buildVisibility === BuildVisibility.sandboxOnly || block.buildVisibility === BuildVisibility.hidden) {
+            block.buildVisibility = BuildVisibility.shown;
+            block.alwaysUnlocked = true;
+        }
+    });
+});
